@@ -336,6 +336,8 @@
          <folder compile="true" path=".git/objects/6a" xsi:type="cobolFolder"/>
          <folder compile="true" path=".git/objects/d7" xsi:type="cobolFolder"/>
          <folder compile="true" path=".git/objects/e8" xsi:type="cobolFolder"/>
+         <folder compile="true" path="Dummy1" xsi:type="cobolFolder"/>
+         <folder compile="true" path="listing" xsi:type="cobolFolder"/>
          <folder compile="true" path=".git/objects/8b" xsi:type="cobolFolder"/>
          <folder compile="true" path=".git/objects/93" xsi:type="cobolFolder"/>
          <folder compile="true" path=".git/objects/a3" xsi:type="cobolFolder"/>

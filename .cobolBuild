@@ -139,6 +139,7 @@
 		<file name="UTIL2.cbl" srcdir="src/cbl"/>
 		<file name="SMPLSTR1.cbl" srcdir="src/cbl"/>
 		<file name="SMPLSTRT.cbl" srcdir="src/cbl"/>
+		<file name="TestCBL.cbl" srcdir="src/cbl"/>
 	</mffilelist>
 	<!-- cobol_file_set_2 -->
 	<mffilelist type="srcfile" id="cobol_file_set_2" srcdir="${basedir}">
@@ -199,6 +200,7 @@
 		<file name="UTIL2${mf.objext}"/>
 		<file name="SMPLSTR1${mf.objext}"/>
 		<file name="SMPLSTRT${mf.objext}"/>
+		<file name="TestCBL${mf.objext}"/>
 	</mffilelist>
 	<!--  ********************************  -->
 	<!--  * MFUnit entry point file list *  -->
@@ -401,6 +403,12 @@
 			<cobollink debug="true" destfile="SMPLSTRT" entrypoint="${mf.entryPoint.cfg.Demo_BankDemo_GIT_Cyberlife}" sharedRts="true" destdir="${mf.destDir.cfg.Demo_BankDemo_GIT_Cyberlife}" is64bit="false" objectdir="${basedir}/loadlib/cobol" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
 				<mffilelist srcdir="${basedir}/loadlib/cobol">
 					<file name="SMPLSTRT${mf.objext}"/>
+				</mffilelist>
+				<mffilelist refid="cobol.mfunit.entry.point.files"/>
+			</cobollink>
+			<cobollink debug="true" destfile="TestCBL" entrypoint="${mf.entryPoint.cfg.Demo_BankDemo_GIT_Cyberlife}" sharedRts="true" destdir="${mf.destDir.cfg.Demo_BankDemo_GIT_Cyberlife}" is64bit="false" objectdir="${basedir}/loadlib/cobol" failonerror="${mf.cobollinkFailOnError}" desttype="dll/cso" threadedRts="true">
+				<mffilelist srcdir="${basedir}/loadlib/cobol">
+					<file name="TestCBL${mf.objext}"/>
 				</mffilelist>
 				<mffilelist refid="cobol.mfunit.entry.point.files"/>
 			</cobollink>
